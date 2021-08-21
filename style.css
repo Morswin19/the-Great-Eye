@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  background-color: #333333;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.bubble {
+  width: 0px;
+  height: 0px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 50%;
+  border: 0px solid #7AD9FF;
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+@-webkit-keyframes bubble-growth {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+  to {
+    width: 74px;
+    height: 219px;
+  }
+}
+
+@keyframes bubble-growth {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+  to {
+    width: 74px;
+    height: 219px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

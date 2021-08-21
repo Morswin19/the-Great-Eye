@@ -1,0 +1,32 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.main-container
+    display: flex
+    flex-wrap: wrap
+    position: relative
+    background-color: #333333
+    min-height: 100vh
+    min-width: 100vw
+
+.bubble
+    width: 0px
+    height: 0px
+    transition: 1s
+    border-radius: 50%
+    // animation: bubble-growth 1s forwards 1
+    border: 0px solid #7AD9FF
+    position: absolute
+    left: 50vw
+    top: 50vh
+    transform: translateX(-50%) translateY(-50%)
+
+@keyframes bubble-growth
+    from
+        width: 0px
+        height: 0px
+    to
+        width: random(300) + px
+        height: random(300) + px
